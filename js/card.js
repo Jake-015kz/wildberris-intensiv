@@ -8,7 +8,7 @@ const card = function () {
   });
 
   closeBtn.addEventListener("click", () => {
-    cart.style.display = "none";
+    cart.style.display = "";
   });
 };
 
