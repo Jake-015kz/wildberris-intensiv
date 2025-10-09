@@ -7,11 +7,10 @@ const getGoods = () => {
       data = await response.json();
       localStorage.setItem("data", JSON.stringify(data));
     }
-    console.log(data);
     links.forEach((link) => {
       link.addEventListener("click", (e) => {
         e.preventDefault();
-        getData();
+        console.log(data);
       });
     });
   };
